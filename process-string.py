@@ -25,7 +25,12 @@ print(x)
 # "J-J" ➞ "J"
 # Notes A hyphen will separate the two letters in the string.
 
+<<<<<<< HEAD
 #Application 2
+=======
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+>>>>>>> 93130f284b9994d68d12d0ad5fe4c1726a826dbe
 user_range = input("Enter a range of letters (e.g., a-z): ")
 start, end = user_range.split('-')
 result = ""
@@ -34,4 +39,5 @@ while start <= end:
         start = chr(ord(start) + 1) 
 
 print(result)
+
 
