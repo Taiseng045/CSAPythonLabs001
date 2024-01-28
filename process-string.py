@@ -6,6 +6,14 @@
 # * "Hello World" -> "HHeelllloo  WWoorrlldd"
 # * "1234!_ "     -> "11223344!!__  "
 
+# Apploication 1
+input = input("Input String: ")
+x=""
+for i in range(len(input)):
+    x = x + input[i]*2
+
+print(x)
+
 
 # Application 2
 #  Given a string indicating a range of letters, return a string which includes all the letters in that range, including the last letter. Note that if the range is given in capital letters, return the string in capitals also!
@@ -17,8 +25,13 @@
 # "J-J" ➞ "J"
 # Notes A hyphen will separate the two letters in the string.
 
-
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-start, end = alphabet.split('-')
+#Application 2
 user_range = input("Enter a range of letters (e.g., a-z): ")
+start, end = user_range.split('-')
+result = ""
+while start <= end:
+        result += start
+        start = chr(ord(start) + 1) 
+
+print(result)
 
